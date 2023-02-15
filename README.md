@@ -5,12 +5,13 @@
    - Miniconda: https://repo.anaconda.com/miniconda/
    - Anaconda: https://repo.anaconda.com/archive/
    - Python: https://www.python.org/downloads/
-2. Installing Jupyter Notebook / Jupyter Lab for hands-on exercises
-   - If you installed either Miniconda / Anaconda, it is recommended to run the following commands
-     - `conda create -n Sentinel python=3.X` (python version of your choosing)
-     - `pip3 install jupyterlab` (Recommended as jupyter lab is known to be more stable)
-     - `pip3 install notebook`
-3. Installing required python packages
+2. If you installed either Miniconda / Anaconda, it is recommended to run the following commands
+   - `conda create -n Sentinel python=3.X` (python version of your choosing)
+   - `conda activate Sentinel`
+3. Installing Jupyter Notebook / Jupyter Lab for hands-on exercises
+   - `pip3 install jupyterlab` (Recommended as jupyter lab is known to be more stable)
+   - `pip3 install notebook`
+4. Installing required python packages
    - `pip3 install pandas`
 
 ## For students
