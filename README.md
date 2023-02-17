@@ -14,6 +14,17 @@
 4. Installing required python packages
    - `pip3 install pandas`
 
+## Verifying Jupyter Lab / Jupyter Notebook is installed
+Run the following command in your terminal / command prompt: <br>
+`jupyter-lab` or `jupyter notebook`, whichever one that you previously pip3 installed.
+
+When successfully invoking the command, you will be able to access your jupyter lab or notebook
+via your webbrowser at http://localhost:8888/lab.
+
+<p align="center" style="margin-bottom: 0px !important;">
+  <img src="images/jupyter.png" width="50%" height="50%" alt="jupyter" align="center">
+</p>
+
 ## For students
 Please refer to the `students` folder. <br>
 Inside it, you will find the folders/files relevant to you:
