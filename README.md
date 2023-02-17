@@ -22,7 +22,7 @@ When successfully invoking the command, you will be able to access your jupyter 
 via your webbrowser at http://localhost:8888/lab.
 
 <p align="center" style="margin-bottom: 0px !important;">
-  <img src="images/jupyter.png" width="50%" height="50%" alt="jupyter" align="center">
+  <img src="images/jupyter.png" width="50%" height="50%" alt="jupyter interface" align="center">
 </p>
 
 ## For students
