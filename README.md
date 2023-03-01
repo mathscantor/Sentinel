@@ -26,6 +26,9 @@ via your webbrowser at http://localhost:8888/lab.
 </p>
 
 ## For students
+
+The necessary materials will be released on **14<sup>th</sup> March 2023**. 
+
 Please refer to the `students` folder. <br>
 Inside it, you will find the folders/files relevant to you:
 1. binaries
