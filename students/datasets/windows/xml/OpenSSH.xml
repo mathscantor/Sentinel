@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:37:53.410611Z">
+    </TimeCreated>
+    <EventRecordID>35</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="3248" ThreadID="3272">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection from 192.168.224.130 port 54534 on 192.168.224.137 port 22</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:37:53.511651Z">
+    </TimeCreated>
+    <EventRecordID>36</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="3248" ThreadID="3272">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Failed publickey for gerald from 192.168.224.130 port 54534 ssh2: ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:37:53.514570Z">
+    </TimeCreated>
+    <EventRecordID>37</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="3248" ThreadID="3272">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection closed by authenticating user gerald 192.168.224.130 port 54534 [preauth]</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:54:41.179273Z">
+    </TimeCreated>
+    <EventRecordID>38</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6012" ThreadID="6056">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection from 192.168.224.130 port 54538 on 192.168.224.137 port 22</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:54:41.283875Z">
+    </TimeCreated>
+    <EventRecordID>39</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6012" ThreadID="6056">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\gerald\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:54:41.284433Z">
+    </TimeCreated>
+    <EventRecordID>40</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6012" ThreadID="6056">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Postponed publickey for gerald from 192.168.224.130 port 54538 ssh2 [preauth]</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:54:41.292334Z">
+    </TimeCreated>
+    <EventRecordID>41</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6012" ThreadID="6056">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\gerald\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:54:41.300941Z">
+    </TimeCreated>
+    <EventRecordID>42</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6012" ThreadID="6056">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted publickey for gerald from 192.168.224.130 port 54538 ssh2: ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:54:41.361092Z">
+    </TimeCreated>
+    <EventRecordID>43</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6012" ThreadID="6056">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">User child is on pid 6812</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:56:46.430506Z">
+    </TimeCreated>
+    <EventRecordID>44</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="1084" ThreadID="6472">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection from 192.168.224.130 port 54540 on 192.168.224.137 port 22</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:56:46.532181Z">
+    </TimeCreated>
+    <EventRecordID>45</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="1084" ThreadID="6472">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\gerald\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:56:46.532722Z">
+    </TimeCreated>
+    <EventRecordID>46</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="1084" ThreadID="6472">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Postponed publickey for gerald from 192.168.224.130 port 54540 ssh2 [preauth]</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:56:46.537373Z">
+    </TimeCreated>
+    <EventRecordID>47</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="1084" ThreadID="6472">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\gerald\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:56:46.544421Z">
+    </TimeCreated>
+    <EventRecordID>48</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="1084" ThreadID="6472">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted publickey for gerald from 192.168.224.130 port 54540 ssh2: ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:56:46.592730Z">
+    </TimeCreated>
+    <EventRecordID>49</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="1084" ThreadID="6472">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">User child is on pid 6672</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:59:07.599233Z">
+    </TimeCreated>
+    <EventRecordID>50</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6220" ThreadID="32">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection from 192.168.224.130 port 54542 on 192.168.224.137 port 22</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:59:07.699876Z">
+    </TimeCreated>
+    <EventRecordID>51</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6220" ThreadID="32">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\gerald\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:59:07.700406Z">
+    </TimeCreated>
+    <EventRecordID>52</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6220" ThreadID="32">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Postponed publickey for gerald from 192.168.224.130 port 54542 ssh2 [preauth]</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:59:07.705650Z">
+    </TimeCreated>
+    <EventRecordID>53</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6220" ThreadID="32">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\gerald\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:59:07.712883Z">
+    </TimeCreated>
+    <EventRecordID>54</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6220" ThreadID="32">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted publickey for gerald from 192.168.224.130 port 54542 ssh2: ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T07:59:07.764622Z">
+    </TimeCreated>
+    <EventRecordID>55</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6220" ThreadID="32">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">User child is on pid 3924</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:54.752371Z">
+    </TimeCreated>
+    <EventRecordID>56</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="572" ThreadID="6440">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection from 192.168.224.130 port 54546 on 192.168.224.137 port 22</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:54.973925Z">
+    </TimeCreated>
+    <EventRecordID>57</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="572" ThreadID="6440">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\Administrator\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:54.974333Z">
+    </TimeCreated>
+    <EventRecordID>58</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="572" ThreadID="6440">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Postponed publickey for Administrator from 192.168.224.130 port 54546 ssh2 [preauth]</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:54.980638Z">
+    </TimeCreated>
+    <EventRecordID>59</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="572" ThreadID="6440">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\Administrator\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:54.989005Z">
+    </TimeCreated>
+    <EventRecordID>60</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="572" ThreadID="6440">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted publickey for Administrator from 192.168.224.130 port 54546 ssh2: ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:55.068105Z">
+    </TimeCreated>
+    <EventRecordID>61</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="572" ThreadID="6440">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">User child is on pid 3936</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:05:55.120224Z">
+    </TimeCreated>
+    <EventRecordID>62</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="3936" ThreadID="7144">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-21-2015006658-2617748372-1685106364-500">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Starting session: shell on windows-pty for administrator from 192.168.224.130 port 54546 id 0</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:03.820192Z">
+    </TimeCreated>
+    <EventRecordID>63</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6956" ThreadID="5572">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Connection from 192.168.224.130 port 54548 on 192.168.224.137 port 22</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:03.881791Z">
+    </TimeCreated>
+    <EventRecordID>64</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6956" ThreadID="5572">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\Administrator\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:03.882178Z">
+    </TimeCreated>
+    <EventRecordID>65</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6956" ThreadID="5572">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Postponed publickey for Administrator from 192.168.224.130 port 54548 ssh2 [preauth]</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:03.888420Z">
+    </TimeCreated>
+    <EventRecordID>66</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6956" ThreadID="5572">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted key ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k found at C:\\Users\\Administrator\\.ssh/authorized_keys:2</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:03.897841Z">
+    </TimeCreated>
+    <EventRecordID>67</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6956" ThreadID="5572">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Accepted publickey for Administrator from 192.168.224.130 port 54548 ssh2: ED25519 SHA256:3pzrzdpqM7H0ZBdojFPWpQM5rKrIFt6GdOnrDgqeW3k</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:03.946410Z">
+    </TimeCreated>
+    <EventRecordID>68</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="6956" ThreadID="5572">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-18">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">User child is on pid 5876</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:04.001933Z">
+    </TimeCreated>
+    <EventRecordID>69</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="5876" ThreadID="6608">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-21-2015006658-2617748372-1685106364-500">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Starting session: command for administrator from 192.168.224.130 port 54548 id 0</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:04.036672Z">
+    </TimeCreated>
+    <EventRecordID>70</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="5876" ThreadID="6608">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-21-2015006658-2617748372-1685106364-500">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Close session: user administrator from 192.168.224.130 port 54548 id 0</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:04.036810Z">
+    </TimeCreated>
+    <EventRecordID>71</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="5876" ThreadID="6608">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-21-2015006658-2617748372-1685106364-500">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Received disconnect from 192.168.224.130 port 54548:11: disconnected by user</Data>
+  </EventData>
+</Event>
+<?xml version="1.0" encoding="utf-8"?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="OpenSSH" Guid="C4B57D35-0636-4BC3-A262-370F249F9802">
+    </Provider>
+    <EventID>4</EventID>
+    <Version>0</Version>
+    <Level>4</Level>
+    <Task>0</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x4000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-02-10T08:08:04.036823Z">
+    </TimeCreated>
+    <EventRecordID>72</EventRecordID>
+    <Correlation>
+    </Correlation>
+    <Execution ProcessID="5876" ThreadID="6608">
+    </Execution>
+    <Channel>OpenSSH/Operational</Channel>
+    <Computer>WIN-4CKB6CSHOSJ</Computer>
+    <Security UserID="S-1-5-21-2015006658-2617748372-1685106364-500">
+    </Security>
+  </System>
+  <EventData>
+    <Data Name="process">sshd</Data>
+    <Data Name="payload">Disconnected from 192.168.224.130 port 54548</Data>
+  </EventData>
+</Event>
