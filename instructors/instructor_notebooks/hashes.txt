@@ -1,0 +1,5 @@
+Hashes of answer_engine.py so that students don't try to modify and cheat
+
+MD5: 398d74d3dc9fde973848ce2481f59def
+SHA1: db44b86ab0f7e2e6d991f06517daf3c6666e35ba
+SHA512: 41e8eb5a7463eb786ade619313b6e85b804e615dba46f344566adbd07f749050a6628799992dea1c5b23ddee25ca81aa9c684bc84066d289ad5253fb66719ae5
