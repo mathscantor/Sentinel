@@ -3,8 +3,7 @@ import hashlib
 '''
 Obviously, you have come to try and get the answers from the answer engine. 
 We have the md5 hash of this file to check for its integrity. 
-Therefore, it is futile to replace the our hashes with your own hashes to score some ezpz points.
-Good try :)
+Therefore, it is futile to replace our hashes with your own hashes to score some ezpz points.
 '''
 class AnswerEngine:
     
