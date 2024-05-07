@@ -3,70 +3,123 @@ import os
 import subprocess
 import json
 import csv
-from utils.messenger import messenger
+import argparse
+from enum import Enum
+
+
+class Severity(Enum):
+    DEBUG = "\033[0;94m[DEBUG]\033[0m "
+    INFO = "\033[0;92m[INFO]\033[0m "
+    WARNING = "\033[0;93m[WARNING]\033[0m "
+    ERROR = "\033[0;91m[ERROR]\033[0m "
+
+
+class Messenger:
+
+    def __init__(self,
+                 verbosity_level: int = 1):
+        self.__verbosity_level = verbosity_level
+        self.__verbosity_range = [1, 2]
+        return
+
+    def print_message(self,
+                      sev: Severity,
+                      message: str = "") -> None:
+        """
+        Utility function to print messages of different severity levels
+
+        :param sev: A Severity Enum
+        :param message: The string to be printed
+        :return: None
+        """
+
+        if self.__verbosity_level not in self.__verbosity_range:
+            print(Severity.ERROR + "{}: Verbosity level out of range {}".format(type(self).__name__,
+                                                                                self.__verbosity_range))
+            return
+
+        # If verbosity is default, then ignore all the debug messages
+        if self.__verbosity_level == 1 and sev == Severity.DEBUG:
+            return
+
+        # Prints all messages under the sun
+        print(sev.value + message)
+        return
+
 
 class Converter:
 
     def __init__(self):
         self.csv_header_set = set()
+        self.__allowed_os = ["nt", "posix"]
         self.concatenated_keys = ""
         self.sentinel_repo_path = os.path.dirname(os.path.abspath(__file__))
         self.operating_system = self.check_operating_system()
 
     def check_operating_system(self) -> str:
-        allowed_os = ["nt", "posix"]
-        if os.name in allowed_os:
+        if os.name in self.__allowed_os:
             return os.name
         else:
-            messenger(2, "Unable to run evtxdump on '{}'".format(os.name))
+            messenger.print_message(Severity.ERROR, "Unable to run evtx_dump on '{}'".format(os.name))
             exit(1)
 
     def convert_evtx_to_json(self):
         evtx_list = glob.glob(pathname=os.path.join(self.sentinel_repo_path, "datasets/windows/evtx/*.evtx"))
-        os.makedirs(os.path.dirname(os.path.join(self.sentinel_repo_path, "datasets/windows/json")), exist_ok=True)
+        os.makedirs(os.path.dirname(os.path.join(self.sentinel_repo_path, "datasets/windows/jsonl")), exist_ok=True)
         for evtx_path in evtx_list:
-            print("Converting: {}".format(evtx_path))
             json_path = os.path.join(self.sentinel_repo_path,
-                                     "datasets/windows/json/{}.json".format(os.path.basename(evtx_path).split(".evtx")[0]))
+                                     "datasets/windows/jsonl/{}.jsonl".format(
+                                         os.path.basename(evtx_path).split(".evtx")[0]))
+            result = None
             if self.operating_system == "nt":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtx_dump.exe"),
-                                "--no-confirm-overwrite",
-                                "--separate-json-attributes",
-                                "--format", "jsonl",
-                                "--output", json_path,
-                                evtx_path])
+                result = subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtx_dump.exe"),
+                                         "--no-confirm-overwrite",
+                                         "--separate-json-attributes",
+                                         "--format", "jsonl",
+                                         "--output", json_path,
+                                         evtx_path])
 
             elif self.operating_system == "posix":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtx_dump"),
-                                "--no-confirm-overwrite",
-                                "--separate-json-attributes",
-                                "--format", "jsonl",
-                                "--output", json_path,
-                                evtx_path])
+                result = subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtx_dump"),
+                                         "--no-confirm-overwrite",
+                                         "--separate-json-attributes",
+                                         "--format", "jsonl",
+                                         "--output", json_path,
+                                         evtx_path])
+
+            if result.returncode == 0:
+                print("\t[+] Saved to {}".format(json_path))
+            else:
+                print("\t[-] Unable to convert {} ".format(evtx_path))
         return
 
     def convert_evtx_to_xml(self):
         evtx_list = glob.glob(pathname=os.path.join(self.sentinel_repo_path, "datasets/windows/evtx/*.evtx"))
         os.makedirs(os.path.dirname(os.path.join(self.sentinel_repo_path, "datasets/windows/xml")), exist_ok=True)
         for evtx_path in evtx_list:
-            print("Converting: {}".format(evtx_path))
             xml_path = os.path.join(self.sentinel_repo_path,
                                     "datasets/windows/xml/{}.xml".format(os.path.basename(evtx_path).split(".evtx")[0]))
+            result = None
             if self.operating_system == "nt":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtx_dump.exe"),
-                                "--no-confirm-overwrite",
-                                "--dont-show-record-number",
-                                "--format", "xml",
-                                "--output", xml_path,
-                                evtx_path])
+                result = subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtx_dump.exe"),
+                                         "--no-confirm-overwrite",
+                                         "--dont-show-record-number",
+                                         "--format", "xml",
+                                         "--output", xml_path,
+                                         evtx_path])
 
             elif self.operating_system == "posix":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtx_dump"),
-                                "--no-confirm-overwrite",
-                                "--dont-show-record-number",
-                                "--format", "xml",
-                                "--output", xml_path,
-                                evtx_path])
+                result = subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtx_dump"),
+                                         "--no-confirm-overwrite",
+                                         "--dont-show-record-number",
+                                         "--format", "xml",
+                                         "--output", xml_path,
+                                         evtx_path])
+
+            if result.returncode == 0:
+                print("\t[+] Saved to {}".format(xml_path))
+            else:
+                print("\t[-] Unable to convert {} ".format(evtx_path))
         return
 
     def update_csv_header_set(self, json_obj: dict):
@@ -93,14 +146,14 @@ class Converter:
 
         return
 
-    def convert_json_to_csv(self):
+    def convert_jsonl_to_csv(self):
         null_value = None
         tmp_data_row = []
-        json_list = glob.glob(pathname=os.path.join(self.sentinel_repo_path, "datasets/windows/json/*.json"))
+        json_list = glob.glob(pathname=os.path.join(self.sentinel_repo_path, "datasets/windows/jsonl/*.jsonl"))
         for json_path in json_list:
-            print("Converting: {}".format(json_path))
             csv_path = os.path.join(self.sentinel_repo_path,
-                                    "datasets/windows/csv/{}.csv".format(os.path.basename(json_path).split(".json")[0]))
+                                    "datasets/windows/csv/{}.csv".format(
+                                        os.path.basename(json_path).split(".jsonl")[0]))
             os.makedirs(os.path.dirname(csv_path), exist_ok=True)
             f_csv = open(csv_path, "w", newline='', encoding="utf8")
             csv_writer = csv.writer(f_csv)
@@ -127,6 +180,7 @@ class Converter:
 
                 for field in csv_header:
                     field_tokens = field.split(".")
+                    value = None
                     if len(field_tokens) == 1:
                         if field_tokens[0] not in json_obj["Event"].keys():
                             value = null_value
@@ -173,7 +227,8 @@ class Converter:
                             value = null_value
                             tmp_data_row.append(value)
                             continue
-                        if field_tokens[3] not in json_obj["Event"][field_tokens[0]][field_tokens[1]][field_tokens[2]].keys():
+                        if field_tokens[3] not in json_obj["Event"][field_tokens[0]][field_tokens[1]][
+                            field_tokens[2]].keys():
                             value = null_value
                             tmp_data_row.append(value)
                             continue
@@ -184,23 +239,28 @@ class Converter:
                 csv_writer.writerow(tmp_data_row)
                 f_csv.flush()
                 tmp_data_row.clear()
+
+            print("\t[+] Saved to {}".format(csv_path))
             self.csv_header_set.clear()
 
-        f_json.close()
-        f_csv.close()
+            f_json.close()
+            f_csv.close()
         return
+
+
+def main():
+    messenger.print_message(Severity.INFO, "Converting EVTX to XML Format...")
+    converter.convert_evtx_to_xml()
+
+    messenger.print_message(Severity.INFO, "Converting EVTX to JSONL Format...")
+    converter.convert_evtx_to_json()
+
+    messenger.print_message(Severity.INFO, "Converting JSONL to CSV Format...")
+    converter.convert_jsonl_to_csv()
+    return
 
 
 if __name__ == "__main__":
     converter = Converter()
-    messenger(3, "Converting EVTX to XML Format...")
-    converter.convert_evtx_to_xml()
-    messenger(0, "Successfully converted EVTX to XML Format!\n")
-
-    messenger(3, "Converting EVTX to JSON Format...")
-    converter.convert_evtx_to_json()
-    messenger(0, "Successfully converted EVTX to JSON Format!\n")
-
-    messenger(3, "Converting JSON to CSV Format...")
-    converter.convert_json_to_csv()
-    messenger(0, "Successfully converted JSON to CSV Format!\n")
+    messenger = Messenger()
+    main()
