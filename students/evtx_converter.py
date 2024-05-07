@@ -29,7 +29,7 @@ class Converter:
             json_path = os.path.join(self.sentinel_repo_path,
                                      "datasets/windows/json/{}.json".format(os.path.basename(evtx_path).split(".evtx")[0]))
             if self.operating_system == "nt":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtxdump_windows.exe"),
+                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtx_dump.exe"),
                                 "--no-confirm-overwrite",
                                 "--separate-json-attributes",
                                 "--format", "jsonl",
@@ -37,7 +37,7 @@ class Converter:
                                 evtx_path])
 
             elif self.operating_system == "posix":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtxdump_linux"),
+                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtx_dump"),
                                 "--no-confirm-overwrite",
                                 "--separate-json-attributes",
                                 "--format", "jsonl",
@@ -53,7 +53,7 @@ class Converter:
             xml_path = os.path.join(self.sentinel_repo_path,
                                     "datasets/windows/xml/{}.xml".format(os.path.basename(evtx_path).split(".evtx")[0]))
             if self.operating_system == "nt":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtxdump_windows.exe"),
+                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/windows/evtx_dump.exe"),
                                 "--no-confirm-overwrite",
                                 "--dont-show-record-number",
                                 "--format", "xml",
@@ -61,7 +61,7 @@ class Converter:
                                 evtx_path])
 
             elif self.operating_system == "posix":
-                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtxdump_linux"),
+                subprocess.run([os.path.join(self.sentinel_repo_path, "binaries/linux/evtx_dump"),
                                 "--no-confirm-overwrite",
                                 "--dont-show-record-number",
                                 "--format", "xml",
